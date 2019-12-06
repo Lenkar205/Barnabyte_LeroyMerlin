@@ -1,0 +1,73 @@
+<!--
+ File:   htmlFile.html
+ Author: arousic
+
+ Created on 18 avril 2019, 14:45
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chatbot</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The HTML5 Herald">
+  		<meta name="author" content="arousic">
+  		<script src="Chatbot.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="style.css">
+
+
+      <header> <img id="logo" src="images/Logo.jpg" align="center" border="5" alt="logo"></img> <br />
+       </header>
+
+    </head>
+    <body>
+
+      <div id="div_left">
+                <img id="bande_left" src="images/bande.jpg"</img>
+       </div>
+
+
+      <div id="div_midle">
+
+        <div id="centrage">
+          <button id="Btn_back" type="button"> <a title="Retour" href=leroy_Merlin.html> Retour</a> </button>
+        </br> </br>
+          <h3> Ask Sylvain : </h3>
+
+        <p>Votre question :</p>
+        <img id="IMG_Chatbot" src="">
+        <input type="text" id="Input_Question">
+        <input type="button" id="Button_Question" value="Envoyer la question" onClick="Chatbot()">
+        <img id="Button_Help" src="help.jpg" onmouseover="Aide()" onmouseout="(function(){document.getElementById('Lab_Chatbox').innerHTML = ''})()">
+                </br>        </br>
+        <label id="Lab_Chatbox_Nom">Sylvain : </label> <label id="Lab_Chatbox"></label>
+        </br>        </br>  </br>        </br> </br>        </br> </br>        </br>
+        <h3> Le club des anciens : </h3>
+    <button type= "button" onclick="ImgPrecedente()"> Précédent </button>
+    <img id = "img" src="dj.png"></img>
+    <button type= "button" onclick="ImgSuivante()"> Suivant </button>
+    <p id = "Texte_Chatbox">Voici un exemple de personne qui ont travaillé chez nous, qui sont maintenant épanouis dans leur vie.</br> Et vivent de leur passion pour le bricolage, tout cela grâce à l'expérience que LEROY MERLIN leur à offerte.</p>
+
+
+      </div>
+      </div>
+
+     <div id="div_right">
+                     <img id="bande_right" src="images/bande.jpg"</img>
+     </div>
+
+     <style>#Button_Help{
+       width : 20px;
+       height : 20px;
+     }
+     .img{
+     width : 250px
+     height : 150px;
+     }
+     </style>
+
+    </body>
+</html>
+
+<!-- end of file -->
